@@ -1,0 +1,31 @@
+﻿@{ 
+    Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AngularReviewDay2">
+<head>
+    @Styles.Render("~/Content/css")
+
+    <style>
+        /** {
+            border: 1px solid black;
+        }*/
+    </style>
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controllers/twitter.js"></script>
+    <script src="~/ngApp/filters.js"></script>
+
+    <title></title>
+</head>
+<body class="container">
+    <div class="row">
+        <img src="https://g.twimg.com/Twitter_logo_blue.png" style="height:100px; width:auto; margin:0 0 20px 0" />
+    </div>
+      
+        <ng-view></ng-view>
+
+</body>
+</html>
